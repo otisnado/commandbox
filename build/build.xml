@@ -670,7 +670,7 @@ External Dependencies:
 		<delete file="${temp.dir}/docbox.html" />
 
 		<!-- Zip API Docs -->
-		<zip destfile="${dist.dir}/${distro.name}-apidocs-${commandbox.version}.zip" basedir="${temp.dir}/apidocs"></zip>
+		<zip destfile="${dist.dir}/${distro.name}-apidocs-${commandbox.version}.zip" basedir="${temp.dir}/apidocs/default"></zip>
 		<!-- Build Checksum -->
 		<checksum forceoverwrite="true" fileext=".md5" file="${dist.dir}/${distro.name}-apidocs-${commandbox.version}.zip" />
 		<checksum forceoverwrite="true" algorithm="sha" file="${dist.dir}/${distro.name}-apidocs-${commandbox.version}.zip" />
